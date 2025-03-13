@@ -6,10 +6,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', HomeController::class);
 
-Route::get('/products', [ProductController::class, 'index']);
-
-Route::get('/products/create', [ProductController::class, 'create']); 
-
-// Route::get('/products/{name}', function ($name) {
-//     echo "PRODUCTO: $name";
-// });
+Route::prefix('/productos')->controller(ProductController::class)->group(function () {
+    Route::get('/', 'index');
+    Route::get('/create', 'create');
+    Route::get('/{name}', 'show');
+});

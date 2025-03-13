@@ -3,21 +3,22 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Product;
 
 class ProductController extends Controller
 {
     public function index()
     {
-        echo "LISTADO DE TODOS LOS PRODUCTOS";
+        return view('productos.index'); // Retornar una lista de productos
     }
 
     public function create()
     {
-        echo "FORMULARIO PARA CREAR UN PRODUCTO";
+        return view('productos.create'); // Retornar un formulario para crear un producto
     }
 
     public function show($name)
     {
-        echo "PRODUCTO: $name";
+        return view('productos.show'); // Retornar un producto específico
     }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNAB Virtual - Educación en Línea</title>
+    <title>Productos - UNAB Virtual</title>
     <style>
         /* Estilos generales */
         body {
@@ -73,19 +73,14 @@
             margin-bottom: 20px;
         }
 
-        .content p {
-            line-height: 1.6;
-            font-size: 1.1em;
-        }
-
-        .programs-grid {
+        .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
             margin-top: 20px;
         }
 
-        .program-card {
+        .product-card {
             background-color: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -94,18 +89,33 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .program-card h4 {
+        .product-image {
+            background-color: #e0e0e0; /* Color de fondo para el contenedor de la imagen */
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product-image span {
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .product-card h4 {
             color: #003366;
             font-size: 1.5em;
             margin-bottom: 10px;
         }
 
-        .program-card p {
+        .product-card p {
             font-size: 1em;
             color: #666;
         }
 
-        .program-card a {
+        .product-card a {
             display: inline-block;
             margin-top: 15px;
             padding: 10px 20px;
@@ -115,7 +125,7 @@
             border-radius: 5px;
         }
 
-        .program-card a:hover {
+        .product-card a:hover {
             background-color: #004080;
         }
 
@@ -134,62 +144,64 @@
 </head>
 <body>
 
+    <!-- Encabezado -->
     <header>
         <h1>UNAB Virtual</h1>
-        <p>Educación en línea con calidad y flexibilidad</p>
+        <p>Explora nuestros productos y servicios</p>
     </header>
 
+    <!-- Navegación -->
     <nav>
         <a href="#about">Sobre Nosotros</a>
-        <a href="#programs">Programas</a>
-        <a href="#admissions">Admisiones</a>
+        <a href="#products">Productos</a>
         <a href="#contact">Contacto</a>
     </nav>
 
+    <!-- Hero Section -->
     <div class="hero">
-        <h2>Transforma tu futuro con UNAB Virtual</h2>
+        <h2>Descubre lo que tenemos para ti</h2>
     </div>
 
+    <!-- Sección de productos -->
     <div class="content" id="products">
-        <h3>Sobre Nosotros</h3>
-        <p>UNAB Virtual es la plataforma de educación en línea de la Universidad Autónoma de Bucaramanga. Ofrecemos programas académicos de alta calidad, diseñados para adaptarse a tu estilo de vida y necesidades profesionales.</p>
-    </div>
-
-    <div class="content" id="programs">
-        <h3>Nuestros Programas</h3>
-        <div class="programs-grid">
-            <div class="program-card">
-                <h4>Pregrados Virtuales</h4>
-                <p>Programas de pregrado en modalidad virtual para que estudies desde cualquier lugar.</p>
-                <a href="#admissions">Más información</a>
+        <h3>Nuestros Productos</h3>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">
+                    <span>Imagen del producto 1</span>
+                </div>
+                <h4>Producto 1</h4>
+                <p>Descripción breve del producto 1. Ideal para estudiantes y profesionales.</p>
+                <a href="#contact">Más información</a>
             </div>
-            <div class="program-card">
-                <h4>Posgrados Virtuales</h4>
-                <p>Especializaciones y maestrías en línea para avanzar en tu carrera profesional.</p>
-                <a href="#admissions">Más información</a>
+            <div class="product-card">
+                <div class="product-image">
+                    <span>Imagen del producto 2</span>
+                </div>
+                <h4>Producto 2</h4>
+                <p>Descripción breve del producto 2. Perfecto para el aprendizaje en línea.</p>
+                <a href="#contact">Más información</a>
             </div>
-            <div class="program-card">
-                <h4>Cursos Cortos</h4>
-                <p>Formación continua en áreas específicas para potenciar tus habilidades.</p>
-                <a href="#admissions">Más información</a>
+            <div class="product-card">
+                <div class="product-image">
+                    <span>Imagen del producto 3</span>
+                </div>
+                <h4>Producto 3</h4>
+                <p>Descripción breve del producto 3. Diseñado para la innovación educativa.</p>
+                <a href="#contact">Más información</a>
+            </div>
+            <div class="product-card">
+                <div class="product-image">
+                    <span>Imagen del producto 4</span>
+                </div>
+                <h4>Producto 4</h4>
+                <p>Descripción breve del producto 4. Herramientas para el éxito profesional.</p>
+                <a href="#contact">Más información</a>
             </div>
         </div>
     </div>
 
-    <div class="content" id="admissions">
-        <h3>Admisiones</h3>
-        <p>¿Listo para comenzar? Conoce los requisitos de admisión y el proceso de inscripción para unirte a UNAB Virtual.</p>
-        <a href="#contact" style="background-color: #003366; color: #fff; padding: 10px 20px; text-decoration: none;">Iniciar proceso</a>
-    </div>
-
-    <div class="content" id="contact">
-        <h3>Contacto</h3>
-        <p>Para más información, contáctanos:</p>
-        <p><strong>Teléfono:</strong> +57 7 123 4567</p>
-        <p><strong>Email:</strong> info@unabvirtual.edu.co</p>
-        <p><strong>Dirección:</strong> Av. 42 #48-11, Bucaramanga, Colombia</p>
-    </div>
-
+    <!-- Footer -->
     <footer>
         <p>&copy; 2023 UNAB Virtual. Todos los derechos reservados.</p>
     </footer>
